@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #2ab0b4;
+  --gradient-start: #2ab0b4;
+  --gradient-end: #1a8589;
+  --text-primary: #333333;
+  --text-secondary: #666666;
+  --background: #ffffff;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text-primary font-arimo;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-bold;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+    opacity: 0.8;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    opacity: 1;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .btn-primary {
+    @apply bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-6 rounded-lg transition-all;
+  }
+  
+  .gradient-bg {
+    @apply bg-gradient-to-r from-gradient-start to-gradient-end;
+  }
+}
