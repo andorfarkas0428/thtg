@@ -1,3 +1,7 @@
+# THTG Job Application Platform
+
+A modern job application platform built with Next.js that enables job seekers to browse positions and submit applications through an interactive web interface.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
