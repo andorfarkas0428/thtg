@@ -82,7 +82,7 @@ export default function TestimonialCarousel() {
     <div className="relative max-w-3xl mx-auto">
       <div className="bg-white rounded-xl shadow-lg p-8">
         <blockquote className={`text-lg text-center italic mb-6 min-h-[80px] transition-opacity duration-300 ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}>
-          "{testimonials[currentIndex].quote}"
+          &quot;{testimonials[currentIndex].quote}&quot;
         </blockquote>
         <div className={`text-center space-y-1 transition-opacity duration-300 ${isTransitioning ? 'opacity-0' : 'opacity-100'}`}>
           <p className="text-text-secondary">{testimonials[currentIndex].author}</p>
@@ -140,4 +140,4 @@ export default function TestimonialCarousel() {
       </div>
     </div>
   );
-} 
+}  
